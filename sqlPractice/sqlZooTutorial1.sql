@@ -74,6 +74,6 @@ WHERE capital LIKE Concat(name, '_%')
 
 --15. Show the name and the extension where the capital is an extension of name of the country.
 
-Select name, Replace(capital, name, '')
-From world
-Where capital Like Concat(name, '_%')
+sELECT name, Replace(capital, name, '')
+FROM world
+WHERE capital LIKE Concat(name, '_%')
