@@ -68,15 +68,15 @@ WHERE 1 <
 SELECT DISTINCT winner
 FROM nobel x
 WHERE 1 <
-(SELECT Count(DISTINCT subject)
-FROM nobel y
-WHERE x.winner = y.winner)
+	(SELECT Count(DISTINCT subject)
+	FROM nobel y
+	WHERE x.winner = y.winner)
 
 ---12. Show the year and subject where 3 prizes were given. Show only years 2000 onwards.
 
 SELECT DISTINCT yr, subject
 FROM nobel x
 WHERE yr >= 2000 AND 3 = 
-(SELECT Count(winner)
-FROM nobel y
-WHERE x.subject = y.subject AND x.yr = y.yr)
+	(SELECT Count(winner)
+	FROM nobel y
+	WHERE x.subject = y.subject AND x.yr = y.yr)
