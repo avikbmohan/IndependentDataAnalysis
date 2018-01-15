@@ -12,5 +12,3 @@
 - Week 2 - Linear Regression, Feature Normalization, Gradient Descent, Normal Equations
 
 ##### SQL Practice - sqlzoo.net Tutorials
-
-- 0 - SELECT basics
