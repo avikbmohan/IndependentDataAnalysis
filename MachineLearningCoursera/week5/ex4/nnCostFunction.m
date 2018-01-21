@@ -99,7 +99,7 @@ J = J + reg_term;
 % -------------------------------------------------------------
 % Backprop
 
-%{ With a for loop - works eh, likely 1 or 2 lines wrong
+% With a for loop - works eh, likely 1 or 2 lines wrong
 %for i = 1:m
     %Forward Prop x_i
 %    x_i = a1(i,:); % x_i is     1 x 401
